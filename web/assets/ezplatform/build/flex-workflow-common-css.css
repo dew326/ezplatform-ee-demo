@@ -1,0 +1,155 @@
+/* eZ colors */
+
+/* boostrap variables*/
+
+.fw-send-for-review {
+  background-color: #106d95;
+}
+
+.fw-send-for-review .ez-extra-actions__content {
+  padding: .5rem;
+}
+
+.fw-send-for-review__user-list {
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  display: block;
+  width: 272px;
+  margin-bottom: 0;
+  background-color: #e5e3e3;
+  max-height: 300px;
+  overflow: auto;
+  transform: scaleY(1);
+  transform-origin: top center;
+  transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.fw-send-for-review__user-list--hidden {
+  transform: scaleY(0);
+}
+
+.fw-send-for-review__user-item {
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.fw-send-for-review__user {
+  display: flex;
+}
+
+.fw-send-for-review__selected-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+  background-color: #646464;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.fw-send-for-review__user-name {
+  align-self: center;
+  padding-right: 1rem;
+  font-size: .875rem;
+}
+
+.fw-send-for-review__message-wrapper {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #106d95;
+  font-weight: bold;
+}
+
+.fw-send-for-review__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: .75rem;
+}
+
+.fw-send-for-review__actions .fw-btn--send-for-review {
+  padding-bottom: .5rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.ez-context-menu .ez-sticky-container .fw-send-for-review__user-wrapper .ez-icon--remove-reviewer {
+  align-self: center;
+  margin-bottom: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.ez-dropdown__list .fw-send-for-review {
+  border-color: #f15a10;
+  background-color: #f15a10;
+}
+
+.ez-dropdown__list .fw-send-for-review .ez-extra-actions__content {
+  max-height: 310px;
+}
+
+.ez-dropdown__list .fw-send-for-review__message-wrapper {
+  border-top-color: #f15a10;
+}
+
+.ez-dropdown__list .fw-send-for-review:after {
+  background-color: #f15a10;
+}
+
+/* eZ colors */
+
+/* boostrap variables*/
+
+.fw-approval {
+  margin-top: 3rem;
+}
+
+.fw-approval__header {
+  color: #106d95;
+}
+
+.fw-approval__header h5 {
+  font-size: 1.125rem;
+}
+
+.fw-approval__type {
+  display: flex;
+  align-items: center;
+}
+
+.fw-approval__type .type__icon {
+  border-radius: 50%;
+  background: #f7d000;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.fw-approval__type .type__icon .ez-icon--review {
+  margin: .5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.fw-approval__type .type__text {
+  margin-left: 1rem;
+}
+
+.fw-approval__description .description__title,
+.fw-approval__description .description__text {
+  margin-bottom: 0;
+}
+
+.fw-approval__description .description__user {
+  font-weight: bold;
+}
+
+.fw-notification .ez-notifications-modal__type .type__icon {
+  background: #f7d000;
+}
+
+.fw-notification.ez-notifications-modal__item--read .type__icon {
+  background-color: #878787;
+}

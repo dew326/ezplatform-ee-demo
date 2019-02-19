@@ -18,6 +18,8 @@ if ($environment === false) {
     $environment = 'prod';
 }
 
+$environment = 'dev';
+
 // Depending on the SYMFONY_DEBUG environment variable, tells whether Symfony should be loaded with debugging.
 // If not set, or "", it is auto activated if in "dev" environment.
 if (($useDebugging = getenv('SYMFONY_DEBUG')) === false || $useDebugging === '') {

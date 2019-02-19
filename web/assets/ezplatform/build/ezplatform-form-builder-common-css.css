@@ -1,0 +1,643 @@
+/* eZ colors */
+
+/* boostrap variables*/
+
+body.ezs-non-scrollable {
+  overflow: hidden;
+  position: relative;
+}
+
+body.ez-airtime-popup-visible .m-page-builder__modal-container .c-config-popup {
+  height: 0;
+}
+
+.c-config-popup__dialog {
+  z-index: 1000000;
+  height: 80vh;
+}
+
+.c-config-popup__content {
+  width: 100%;
+  height: 100%;
+}
+
+.c-config-popup__btn--close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.c-config-popup__header {
+  display: block;
+  background: #dbdbdb;
+  font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 0.5rem 1rem;
+}
+
+.c-config-popup__body {
+  height: calc(100% - 3.75rem);
+  padding: 1rem 0 0;
+}
+
+.c-config-popup__headline {
+  max-width: calc(100% - 3.5rem);
+}
+
+.c-config-popup__title {
+  line-height: 1;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.c-config-popup__subtitle {
+  display: inline-block;
+  color: #646464;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: relative;
+  top: -0.25rem;
+  left: 0.0625rem;
+}
+
+.c-config-popup--airtime .c-config-popup__btns {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.c-config-popup--airtime .c-config-popup__btns .btn {
+  margin: 0 0.5rem;
+}
+
+.c-config-popup--airtime .c-config-popup__header {
+  padding: 1rem;
+}
+
+.c-config-popup--airtime .c-config-popup__body {
+  padding: 0;
+}
+
+.c-config-popup--airtime .c-config-popup__dialog {
+  height: auto;
+  width: 390px;
+}
+
+.c-config-popup--airtime .c-date-picker {
+  margin: 1.5rem 2.5rem 2.5rem 2.5rem;
+}
+
+.c-iframe,
+.c-iframe__loading,
+.c-iframe__preview {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.c-iframe--is-loading .c-iframe__preview {
+  display: none;
+}
+
+.c-tab__header {
+  height: 2.8125rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: #106d95;
+  padding: 0.625rem;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.c-tab__icon {
+  fill: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.c-tab__icon--opened {
+  display: none;
+}
+
+.c-tab__icon--closed {
+  display: block;
+}
+
+.c-tab__title {
+  color: #fff;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.c-tab--opened .c-tab__icon--opened {
+  display: block;
+}
+
+.c-tab--opened .c-tab__icon--closed {
+  display: none;
+}
+
+.c-tab .c-sidebar-field {
+  margin: 0.5rem 0.625rem;
+}
+
+.c-tab .c-sidebar-field:first-child {
+  margin-top: 0.625rem;
+}
+
+.c-tab .c-sidebar-field:last-child {
+  margin-bottom: 0.75rem;
+}
+
+.c-sidebar-field {
+  height: 2.5rem;
+  border-radius: 0.3125rem;
+  background: #fff;
+  box-shadow: 0.0625rem 0.0625rem 0.25rem 0 rgba(86, 94, 99, 0.3);
+  display: grid;
+  grid-template-areas: 'icon label';
+  grid-template-columns: 1.5rem auto;
+  grid-column-gap: 1rem;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+  color: #0a5574;
+  width: 15.9375rem;
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.c-sidebar-field__icon-wrapper {
+  grid-area: icon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-sidebar-field__label {
+  grid-area: label;
+  display: flex;
+  align-items: center;
+}
+
+.c-sidebar-field .ez-icon {
+  fill: #0a5574;
+}
+
+.c-form-field {
+  position: relative;
+  display: grid;
+  grid-template-areas: 'drag-handler label settings trash';
+  grid-template-columns: 2rem auto 2.25rem 2.25rem;
+  grid-column-gap: 1rem;
+  background: #fff;
+  color: #333;
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+  padding: 0 1rem;
+  transition: background 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 0.125rem solid rgba(237, 237, 237, 0.5);
+  min-height: 3.5rem;
+  border-radius: 0.25rem;
+}
+
+.c-form-field:hover {
+  border: 0.125rem solid rgba(219, 219, 219, 0.75);
+}
+
+.c-form-field__drag-handler {
+  grid-area: drag-handler;
+  display: flex;
+  align-items: center;
+}
+
+.c-form-field__drag-handler .ez-icon {
+  fill: #dbdbdb;
+}
+
+.c-form-field__label {
+  grid-area: label;
+  display: flex;
+  align-items: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.875rem;
+}
+
+.c-form-field__setting,
+.c-form-field__trash {
+  display: flex;
+  align-items: center;
+}
+
+.c-form-field__setting {
+  grid-area: settings;
+}
+
+.c-form-field__trash {
+  grid-area: trash;
+}
+
+.c-form-field__trash .ez-icon {
+  fill: #555;
+}
+
+.c-form-field__error {
+  font-style: italic;
+  color: #aa0000;
+  font-size: 0.75rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.c-form-field--invalid .c-form-field__drag-handler .ez-icon {
+  fill: #878787;
+}
+
+.c-form-field .c-action {
+  border: 0 none;
+  background: none;
+  transition: background 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.c-form-field .c-action .ez-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.c-form-field--invalid {
+  color: #aa0000;
+  background: rgba(217, 45, 66, 0.15);
+}
+
+.ez-form-builder__call-to-action {
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  text-align: center;
+  padding: 2rem 0 1rem;
+  background-color: #e5e3e3;
+  display: none;
+}
+
+.ez-form-builder__btn--create {
+  background: #f15a10;
+  color: #fff;
+  padding: 0.25rem 1rem 0.25rem 0;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.ez-form-builder__btn--create:hover,
+.ez-form-builder__btn--create:focus {
+  background: #ab3f0a;
+}
+
+.ez-form-builder__btn-icon {
+  fill: #fff;
+  margin: 0 0.625rem;
+}
+
+.ez-form-builder-preview {
+  position: relative;
+  background: #ededed;
+  display: grid;
+  grid-template-areas: 'iframe actions';
+  grid-template-columns: auto 2.5rem;
+  grid-column-gap: 1rem;
+  padding: 1.25rem;
+}
+
+.ez-form-builder-preview__iframe {
+  grid-area: iframe;
+}
+
+.ez-form-builder-preview__actions {
+  grid-area: actions;
+}
+
+.ez-form-builder-preview__action {
+  border: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 0.625rem;
+  transition: background 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.ez-form-builder-preview__action--edit:hover {
+  background: #ab3f0a;
+}
+
+.ez-form-builder-preview__action--trash:hover {
+  background: #093a50;
+}
+
+.ez-form-builder-preview__preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  background: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ez-form-builder--no-value .ez-form-builder-preview {
+  display: none;
+}
+
+.ez-form-builder--no-value .ez-form-builder__call-to-action {
+  display: block;
+}
+
+.ez-form-builder.is-invalid .ez-form-builder__call-to-action {
+  position: relative;
+}
+
+.ez-form-builder.is-invalid .ez-form-builder__call-to-action:before {
+  content: '!';
+  position: absolute;
+  top: 0;
+  left: -1.25rem;
+  background: #aa0000;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  border-top-left-radius: 0.3125rem;
+  border-bottom-left-radius: 0.3125rem;
+  width: 1.25rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+}
+
+.ez-form-builder.is-invalid .ez-form-builder__call-to-action .ez-form-builder__error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.ez-form-builder--loading-preview .ez-form-builder-preview__preloader {
+  z-index: 100;
+  opacity: 1;
+}
+
+.ez-form-builder-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f3f3f3;
+  overflow: auto;
+}
+
+.ez-form-builder--closed .ez-form-builder-wrapper {
+  display: none;
+}
+
+.ez-content-edit-container .ez-field-edit--ezform {
+  margin-bottom: 0;
+}
+
+.ez-form-builder #ez-form-builder-root,
+.ez-form-builder .ez-main-container {
+  height: 100%;
+}
+
+.m-form-builder {
+  display: grid;
+  grid-template-areas: 'sidebar workspace' 'popup popup';
+  grid-template-columns: 17.1875rem auto;
+  grid-column-gap: 1rem;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.m-form-builder__sidebar-wrapper {
+  grid-area: sidebar;
+  height: 100%;
+}
+
+.m-form-builder__sidebar {
+  background: #fff;
+}
+
+.m-form-builder__workspace {
+  grid-area: workspace;
+}
+
+.m-form-builder__popup-container {
+  grid-area: popup;
+}
+
+.droppable-placeholder {
+  width: 100%;
+  flex: 0 0 100%;
+  align-self: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 0 1rem;
+  background: rgba(168, 200, 213, 0.25);
+  border: 0.125rem solid rgba(168, 200, 213, 0.25);
+  min-height: 3.5rem;
+  border-radius: 0.25rem;
+}
+
+.droppable-placeholder > * {
+  display: none;
+}
+
+.droppable-placeholder.droppable-placeholder--removing {
+  opacity: 0;
+  background: rgba(217, 45, 66, 0.75);
+}
+
+.droppable-placeholder.droppable-placeholder--removing:before {
+  content: 'Field dropped incorrectly';
+  color: #fff;
+}
+
+.m-form-builder__workspace {
+  padding: 2.75rem 6rem;
+}
+
+.m-form-builder__workspace--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.m-form-builder__workspace--empty:after {
+  flex: 0 0 100%;
+  content: attr(data-empty-message);
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #adadad;
+}
+
+.droppable--is-removing-placeholder .m-form-builder__workspace--empty:after {
+  display: none;
+}
+
+.c-form-field + .c-form-field,
+.c-form-field + .droppable-placeholder {
+  margin-top: 1rem;
+}
+
+.ez-form-builder-modal {
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  outline: 0;
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+
+.ez-form-builder-modal__header {
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  background: #e5e3e3;
+  justify-content: initial;
+  border-radius: 0;
+}
+
+.ez-form-builder-modal__headline {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.ez-form-builder-modal__title {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-weight: 700;
+}
+
+.ez-form-builder-modal__content-title {
+  color: #878787;
+  font-size: 1.125rem;
+}
+
+.ez-form-builder-modal__field-title {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.ez-form-builder-modal__content {
+  border-radius: 0;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #f3f3f3;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.ez-form-builder-modal__dialog {
+  max-width: initial;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  pointer-events: none;
+  transform: translate(0, -25%);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.ez-form-builder-modal__body {
+  position: relative;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.ez-form-builder-modal__btn {
+  border: 0;
+  display: inline-block;
+  margin-right: 4.1875rem;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  transition: background 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ez-form-builder-modal__btn--back {
+  margin-left: 0.5rem;
+}
+
+.ez-form-builder-modal__btn:hover,
+.ez-form-builder-modal__btn:focus {
+  background: #c0bbbb;
+}
+
+.ez-form-builder-modal--visible {
+  z-index: 1050;
+  opacity: 1;
+  display: block;
+}
+
+.ez-form-builder-modal--visible .ez-form-builder-modal__dialog {
+  transform: translate(0, 0);
+}
+
+.ez-form-builder-modal--visible .c-config-popup:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  opacity: 0.5;
+}

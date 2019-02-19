@@ -1,0 +1,198 @@
+/* eZ colors */
+
+/* boostrap variables*/
+
+.ez-workflow-apply-transition {
+  background-color: #106d95;
+}
+
+.ez-workflow-apply-transition .ez-extra-actions__content {
+  padding: .5rem;
+}
+
+.ez-workflow-apply-transition__message-wrapper {
+  font-weight: bold;
+}
+
+.ez-workflow-apply-transition__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: .75rem;
+}
+
+.ez-workflow-apply-transition__actions .ez-btn--workflow-apply {
+  padding-bottom: .5rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.ez-dropdown .ez-workflow-apply-transition {
+  border-color: #f15a10;
+  background-color: #f15a10;
+}
+
+.ez-dropdown .ez-workflow-apply-transition::after {
+  background-color: #f15a10;
+}
+
+.ez-workflow-event {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8125rem;
+}
+
+.ez-workflow-event__name {
+  font-weight: bold;
+  padding-right: 0.5rem;
+  line-height: 2rem;
+}
+
+.ez-workflow-event__author {
+  padding-right: 0.5rem;
+  line-height: 2rem;
+}
+
+.ez-workflow-event__date {
+  flex: 1 1 auto;
+  line-height: 2rem;
+}
+
+.ez-workflow-event__desc {
+  flex: 1 0 100%;
+}
+
+.ez-workflow-chart {
+  width: 100%;
+}
+
+.ez-workflow-chart__headline {
+  font-size: 0.9375rem;
+  background: #555;
+  color: #fff;
+  line-height: 2.8125rem;
+  padding: 0 1.25rem;
+  margin: 0;
+}
+
+.ez-workflow-chart__items-wrapper {
+  padding: 0.75rem 0;
+  background: #fff;
+}
+
+.ez-workflow-chart__items {
+  position: relative;
+}
+
+.ez-workflow-chart__items:before {
+  content: '';
+  width: 0.125rem;
+  height: 100%;
+  background: #a8c8d5;
+  left: 2rem;
+  top: 0;
+  position: absolute;
+}
+
+.ez-workflow-chart__items:after {
+  content: '';
+  clear: both;
+  display: table;
+  width: 100%;
+}
+
+.ez-workflow-chart__item {
+  position: relative;
+}
+
+.ez-workflow-chart__item + .ez-workflow-chart__item {
+  margin-top: 1rem;
+}
+
+.ez-workflow-chart__item:last-child:before {
+  content: '';
+  width: 0.625rem;
+  height: 100%;
+  background: #fff;
+  left: 2rem;
+  top: 0;
+  position: absolute;
+}
+
+.ez-workflow-chart__icon-wrapper {
+  background: #00825c;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  left: 1.0625rem;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 0.25rem #fff;
+}
+
+.ez-workflow-chart__event {
+  padding-left: 4rem;
+}
+
+.ez-popup--workflow .modal-dialog {
+  min-width: 53.75rem;
+  width: 60vh;
+}
+
+.ez-popup--workflow .modal-header {
+  background: #dbdbdb;
+}
+
+.ez-popup--workflow .modal-body {
+  padding: 2rem;
+}
+
+.ez-table--workflow .ez-table__cell--top {
+  vertical-align: top;
+}
+
+.ez-content-edit-workflow__chart-title {
+  background: #a8c8d5;
+  border-radius: 0.25rem 0.25rem 0 0;
+  line-height: 2.8125rem;
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+.ez-content-edit-workflow__chart {
+  background: #fff;
+}
+
+.ez-content-edit-workflow .ez-workflow-chart__icon-wrapper {
+  box-shadow: 0 0 0 0.25rem #fff;
+}
+
+.ez-content-edit-workflow .ez-workflow-chart__item:last-child:before {
+  background: #fff;
+}
+
+.ez-workflow-dashboard-table__badge {
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #fff;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.ez-workflow-dashboard-table .ez-btn--workflow-chart .ez-workflow-dashboard-table__icon--history {
+  fill: #646464;
+  transition: fill 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.ez-workflow-dashboard-table .ez-btn--workflow-chart:hover .ez-workflow-dashboard-table__icon--history,
+.ez-workflow-dashboard-table .ez-btn--workflow-chart:focus .ez-workflow-dashboard-table__icon--history {
+  fill: #3e3e3e;
+}
+
+.ez-workflow-dashboard-table .ez-table__actions-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}

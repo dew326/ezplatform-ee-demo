@@ -1,0 +1,25 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["ezplatform-admin-ui-link-manager-view-js"],{
+
+/***/ "./vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/js/scripts/button.content.edit.js":
+/*!************************************************************************************************************!*\
+  !*** ./vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/js/scripts/button.content.edit.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }\n\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance\"); }\n\nfunction _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === \"[object Arguments]\") return Array.from(iter); }\n\nfunction _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }\n\n(function (global, doc, $) {\n  var FORM_EDIT = 'form.ez-edit-content-form';\n\n  var editVersion = function editVersion(event) {\n    var versionEditForm = doc.querySelector(FORM_EDIT);\n    var versionEditFormName = versionEditForm.name;\n    var contentId = event.currentTarget.dataset.contentId;\n    var versionNo = event.currentTarget.dataset.versionNo;\n    var languageCode = event.currentTarget.dataset.languageCode;\n    var contentInfoInput = versionEditForm.querySelector('input[name=\"' + versionEditFormName + '[content_info]\"]');\n    var versionInfoContentInfoInput = versionEditForm.querySelector('input[name=\"' + versionEditFormName + '[version_info][content_info]\"]');\n    var versionInfoVersionNoInput = versionEditForm.querySelector('input[name=\"' + versionEditFormName + '[version_info][version_no]\"]');\n    var languageInput = versionEditForm.querySelector('#' + versionEditFormName + '_language_' + languageCode);\n    var checkVersionDraftLink = global.Routing.generate('ezplatform.version_draft.has_no_conflict', {\n      contentId: contentId\n    });\n\n    var submitVersionEditForm = function submitVersionEditForm() {\n      contentInfoInput.value = contentId;\n      versionInfoContentInfoInput.value = contentId;\n      versionInfoVersionNoInput.value = versionNo;\n      languageInput.checked = true;\n      versionEditForm.submit();\n    };\n\n    var addDraft = function addDraft() {\n      submitVersionEditForm();\n      $('#version-draft-conflict-modal').modal('hide');\n    };\n\n    var showModal = function showModal(modalHtml) {\n      var wrapper = doc.querySelector('.ez-modal-wrapper');\n      wrapper.innerHTML = modalHtml;\n      var addDraftButton = wrapper.querySelector('.ez-btn--add-draft');\n\n      if (addDraftButton) {\n        addDraftButton.addEventListener('click', addDraft, false);\n      }\n\n      _toConsumableArray(wrapper.querySelectorAll('.ez-btn--prevented')).forEach(function (btn) {\n        return btn.addEventListener('click', function (event) {\n          return event.preventDefault();\n        }, false);\n      });\n\n      $('#version-draft-conflict-modal').modal('show');\n    };\n\n    event.preventDefault();\n    fetch(checkVersionDraftLink, {\n      credentials: 'same-origin'\n    }).then(function (response) {\n      // Status 409 means that a draft conflict has occurred and the modal must be displayed.\n      // Otherwise we can go to Content Item edit page.\n      if (response.status === 409) {\n        response.text().then(showModal);\n      } else if (response.status === 200) {\n        submitVersionEditForm();\n      }\n    });\n  };\n\n  _toConsumableArray(doc.querySelectorAll('.ez-btn--content-edit')).forEach(function (button) {\n    return button.addEventListener('click', editVersion, false);\n  });\n})(window, document, window.jQuery);\n\n//# sourceURL=webpack:///./vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/js/scripts/button.content.edit.js?");
+
+/***/ }),
+
+/***/ 19:
+/*!******************************************************************************************************************!*\
+  !*** multi ./vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/js/scripts/button.content.edit.js ***!
+  \******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__(/*! /home/dev/server/pb-demo.v2/vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/js/scripts/button.content.edit.js */\"./vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/js/scripts/button.content.edit.js\");\n\n\n//# sourceURL=webpack:///multi_./vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/public/js/scripts/button.content.edit.js?");
+
+/***/ })
+
+},[[19,"runtime"]]]);
